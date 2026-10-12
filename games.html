@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Universe | Игры</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"></div>
+      <span>ROBLOX PORTAL</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="games.html" class="active">Игры & Обби</a></li>
+      <li><a href="history.html">История</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="secrets.html">Секреты & OOF</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom: 20px;">
+      <h1>ИГРАЙ ПРЯМО ЗДЕСЬ: OBBY RUNNER</h1>
+      <p>Управляй Нубиком, перепрыгивай красные Killbrick блоки и собирай Bloxy Cola! Нажми <b>Пробел</b> или тапай по экрану для прыжка.</p>
+    </section>
+
+    <!-- Окно мини-игры -->
+    <div class="game-wrapper">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding: 0 10px;">
+        <span style="color:var(--accent-cyan); font-weight:700;">Classic Obby v1.0</span>
+        <span id="scoreDisplay" style="color:var(--accent-gold); font-weight:800; font-size:1.2rem;">Очки: 0</span>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+      <div class="game-controls">
+        <button id="startBtn" class="btn btn-primary">▶ Начать игру</button>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 50px; text-align:center;">Легендарные плейсы всех времен</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <span class="retro-badge">2008</span>
+        <h3>Work at a Pizza Place</h3>
+        <p>Один из старейших плейсов, где каждый мог стать шеф-поваром, кассиром или курьером на мопеде.</p>
+      </div>
+      <div class="card">
+        <span class="retro-badge">2009</span>
+        <h3>Natural Disaster Survival</h3>
+        <p>Выживание на острове против торнадо, метеоритов, цунами и извержений вулканов.</p>
+      </div>
+      <div class="card">
+        <span class="retro-badge">2007</span>
+        <h3>Sword Fights on the Heights</h3>
+        <p>Культовая арена для сражений на мечах от Shedletsky (Telamon). Родина настоящего соревновательного скилла.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="secret-noob-trigger">🟡</div>
+
+  <footer>
+    <p>© 2026 Roblox Fan Portal. Все права на плейсы принадлежат их создателям.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
